@@ -12,6 +12,8 @@ from django.contrib import admin
 import app.forms
 import app.views
 
+import blog.views
+
 # Uncomment the next lines to enable the admin:
 # from django.conf.urls import include
 # from django.contrib import admin
@@ -45,5 +47,7 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls))
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^blog$', blog.views.post_list,name='blog'),
+    url(r'^blog/list', blog.views.post_list,name='blog_list')
 ]
