@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>DjangoWebProject1</Name>
     <RootNamespace>DjangoWebProject1</RootNamespace>
-    <WebBrowserPort>8080</WebBrowserPort>
+    <WebBrowserPort>40000</WebBrowserPort>
     <PythonRunWebServerCommandType />
     <PythonDebugWebServerCommandType />
   </PropertyGroup>
